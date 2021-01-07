@@ -32,3 +32,16 @@ application to exist further for users who may still make good use of it,
 TeamSpeak Systems GmbH added the required change for the API key and decided to
 release the code as open source to the public, but decided against maintaining
 the application themselves in the Google Play Store.
+
+Edit by Chemputer:
+
+To build (I plan on expanding this when I get time):
+Using Debian 9 (almost certainly can be done using Windows, Mac, whatever) without using Android Studio.
+Install Gradle -- latest version is okay
+Install Android SDK
+Install Android SDK target version 25 and build tools version 25.0.1
+Create the appropriate environmental variables for the Android SDK and Gradle.
+Install NDK(?)
+run ./gradlew -- it should complete with no errors
+run ./gradlew build -- this should successfully build, leaving you with the apk in app/build/outputs/apk, there are two, debug version
+and an unsigned release version. 
